@@ -9,7 +9,7 @@ void display_scanning_animation(int total_steps) {
     for (int step = 0; step < total_steps; step++) {
         printf("\rScanning for devices %s", animation[i]);
         fflush(stdout);
-        usleep(SCAN_SLEEP_DURATION);
+        sleep(SCAN_SLEEP_DURATION);
         i = (i + 1) % 4;
     }
     printf("\rScanning for devices...\n");

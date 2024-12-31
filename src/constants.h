@@ -3,7 +3,7 @@
 
 #define MAX_DEVICES 256
 #define BUFFER_SIZE 1024
-#define SCAN_SLEEP_DURATION 300000
+#define SCAN_SLEEP_DURATION 30
 #define DEVICE_NAME_UNKNOWN_PREFIX "Unknown"
 
 #define BLUETOOTH_CTL "bluetoothctl"

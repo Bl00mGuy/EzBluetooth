@@ -7,7 +7,7 @@
 #include "utils.h"
 
 void execute_command(const char *command, char *output, size_t size) {
-    FILE *pipe = popen(command, "r");
+    FILE *pipe = fopen(command, "r");
     if (!pipe) {
         fprintf(stderr, "Error executing command: %s\n", command);
         return;
@@ -18,7 +18,7 @@ void execute_command(const char *command, char *output, size_t size) {
         strncat(output, buffer, size - strlen(output) - 1);
     }
 
-    pclose(pipe);
+    fclose(pipe);
 }
 
 void scan_bluetooth_devices(char devices[MAX_DEVICES][2][256], int *device_count) {

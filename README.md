@@ -29,24 +29,18 @@ cd ezbluetooth
 
 ### Build the Project
 
-1. Ensure you have `cmake` and `make` installed on your system.
-2. Create a build directory and run the following commands:
+Run the following gcc command to compile the project:
 
 ```
-mkdir build
-cd build
-cmake ..
-make
+gcc -o EzBluetooth src/main.c src/bluetooth.c src/utils.c -lbluetooth -Wall -Wextra -std=c17
 ```
 
-This will generate the executable `ezbluetooth`.
+### Running the Program
 
-### Install the Executable (Optional)
-
-To install the executable globally, run:
+After compilation, run the program using:
 
 ```
-sudo make install
+./EzBluetooth
 ```
 
 ## Usage
