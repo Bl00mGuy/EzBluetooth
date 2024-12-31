@@ -35,14 +35,6 @@ Run the following gcc command to compile the project:
 gcc -o EzBluetooth src/main.c src/bluetooth.c src/utils.c -lbluetooth -Wall -Wextra -std=c17
 ```
 
-### Running the Program
-
-After compilation, run the program using:
-
-```
-./EzBluetooth
-```
-
 ## Usage
 
 ### Running the Utility
@@ -50,7 +42,7 @@ After compilation, run the program using:
 Run the utility by executing the following command in your terminal:
 
 ```
-./ezbluetooth
+./EzBluetooth
 ```
 
 Once the program starts, you can enter the following commands:
